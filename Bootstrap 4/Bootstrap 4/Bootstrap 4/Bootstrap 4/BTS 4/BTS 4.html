@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Gang</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+<style>  
+    :root {
+    --bs-primary: #000000;
+    --bs-secondary: #A4D65E;
+    --bs-success: #007A33;
+    --bs-info: #4DA6D1;
+    --bs-warning: #FF8C00;
+    --bs-danger: #C72C41;
+    --bs-dark: #333333;
+    --bs-light: #F2F2F2;
+    }
+
+    body {
+    background-color: #ffffff; 
+    color: #000000;
+    }
+
+    header {
+    background-color: var(--bs-primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+
+    header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px;
+            font-size: 1.2em;
+        }
+
+        /* Menu orizzontale fisso con sfondo che occupa tutta la larghezza */
+        nav {
+            position: fixed;
+            top: 120px; /* Posizionato sotto l'header */
+            left: 0;
+            width: 100%; /* Lo sfondo copre tutta la larghezza della pagina */
+            background-color: #333;
+            z-index: 1000;
+            padding: 10px 0; /* Altezza del menu */
+            text-align: center;
+            transition: top 0.3s ease; /* Transizione per l'animazione */
+        }
+
+        /* Menu con effetto dopo lo scroll */
+        nav.scrolled {
+            top: 0; /* Menu attaccato in cima quando si scrolla */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per l'effetto visivo */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block; /* Centra il contenuto orizzontalmente */
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 30px; /* Distanza tra i link */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        
+        .content {
+            margin-top: 200px; /* Spazio extra per non coprire il menu */
+            padding: 20px;
+        }
+
+        /* Spazio extra sui titoli h2 per evitare il sovrapporsi al menu */
+        h2 {
+            margin-top: 80px; /* Spazio extra per il menu fisso */
+        }
+
+        /* Media query per schermi più piccoli */
+        @media (max-width: 768px) {
+            nav ul li {
+                margin-right: 15px;
+            }
+
+            nav a {
+                font-size: 16px; /* Ridurre la dimensione del testo su schermi piccoli */
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                margin-right: 10px;
+            }
+
+            nav a {
+                font-size: 14px; /* Ancora più piccolo su schermi molto piccoli */
+            }
+        }
+
+        
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Baby Gang</h1>
+    <p>Zaccaria Mouhib</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#biografia">Biografia</a></li>
+        <li><a href="#primi-singoli">I Primi Singoli</a></li>
+        <li><a href="#inizio-del-successo">L'Inizio del Successo</a></li>
+        <li><a href="#mentalite">Mentalité</a></li>
+        <li><a href="#innocente">Innocente</a></li>
+        <li><a href="#angelo-del-male">L'Angelo del Male</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+    </ul>
+</nav>
+
+<div class="container mt-5">
+
+    <div style="text-align: center;">
+        <img src="baby-gang-022-coverpage.jpg" alt="Baby Gang" width="800" height="450">
+    </div>
+    
+
+    <br>
+
+    <div style="display: flex; justify-content: center;">
+        <h2 id="biografia">Biografia</h2>
+    </div>
+    <p><strong>Zaccaria Mouhib</strong> nasce a Lecco il 26 giugno 2001 da una famiglia marocchina. Cresce tra Lecco e la vicina Calolziocorte per poi trasferirsi in <strong>Marocco</strong>, dove la madre lo porta a vivere prima a Meknès e poi per un anno a Casablanca. Tornato in Italia, vive in un bilocale in una situazione di grave disagio economico, con sei fratelli e sorelle e genitori assenti. Nel 2012, mentre frequenta le scuole medie nel paese di Ponte in Valtellina, decide di non pesare sulle spalle della famiglia e scappa di casa. In questo periodo inizia ad assumere hashish e psicofarmaci, quali il Rivotril, e viene a contatto con altri suoi coetanei in condizioni simili. Inizia a dedicarsi alla <strong>microcriminalità</strong> e i giornalisti credevano che i furti e le rapine messe in atto in quelle zone fossero opera delle baby gang: in realtà, il colpevole era solamente Zaccaria. Per questo motivo i suoi amici lo soprannominarono <strong>Baby Gang</strong>. A causa di questi reati, Zaccaria viene mandato in diverse <strong>comunità</strong>.</p>
+    
+    <div style="display: flex; justify-content: center;">
+        <h2 id= "primi-singoli">I primi singoli</h2>
+    </div>
+    
+    <p>Nell'aprile 2018 pubblica su YouTube il singolo <strong>Street</strong>, che riscuote un discreto successo, compone poi <strong>Fuck la pula</strong>, la cui registrazione in studio viene eseguita durante la detenzione. Il pezzo ha però vita breve: una volta pubblicato viene immediatamente cancellato a causa del testo eccessivamente violento. Nello stesso anno a causa di una rapina su un treno della ferrovia Milano-Lecco viene nuovamente arrestato e condotto al carcere minorile di Milano, dove conosce <strong>Sacky</strong>, anch'egli rapper emergente proveniente dal quartiere milanese di San Siro e di classe 2002.
+    Nel 2019, dopo essere stato rilasciato, pubblica <strong>Educazione</strong> e <strong>Cella 1</strong>, due brani di successo che descrivono la sua esperienza carceraria. In seguito, lui stesso eliminerà la prima delle due canzoni da Spotify perché, a suo dire, si era pentito di averla pubblicata. Sempre su Spotify pubblica poi il singolo Coco con <strong>Il Ghost</strong>, rapper italo-albanese classe '98. A inizio 2020 pubblica il singolo <strong>Blitz</strong>, e sempre nello stesso anno iniziano le sue prime collaborazioni. Pubblica il singolo <strong>Bimbi Soldato</strong> con l'amico Sacky, ma a causa della presenza di armi nel videoclip vengono perquisiti all'alba dalla Digos, oltre ad essere indagati per i reati di porto illegale di armi in luogo pubblico e apologia di reato. Sempre nel 2020 collabora anche con un gruppo locale molto famoso di Varese chiamato <strong>167 Gang</strong> pubblicando il singolo <strong>Baby gang</strong>, e conclude l'anno con i singoli <strong>Caramba</strong> e <strong>Cella 2</strong> ottenendo un buon successo.</p>
+
+    <div style="display: flex; justify-content: center;">
+        <div style="margin: 10px; text-align: center;">
+            <img src="il-ghost-1123-coverpage.jpg" alt="Il Ghost" width="800" height="450">
+            <p style="font-style: italic;">Il Ghost</p>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <h2 id="inizio-del-successo">L'inizio del successo</h2>
+    </div>
+    <p>Zaccaria inizia il 2021 pubblicando il singolo <strong>Baby</strong>, seguito poi da <strong>Treni</strong> con Il Ghost che fa ottenere molto successo. In seguito sarà ospite del singolo <strong>Shotta 2</strong> di <strong>Vale Pain</strong>. Seguono poi i singoli <strong>No Parla Tanto</strong> e <strong>Blitz 2</strong> dove canta in collaborazione con il rapper francese <strong>Sofiane</strong>. Pubblica poi il suo primo EP di sette tracce chiamato <strong>EP 1</strong>. Nel progetto prendono parte i altri rapper come Il Ghost, <strong>Rondodasosa</strong>, <strong>Neima Ezza</strong> ed <strong>Escomar</strong>. Viene poi ospitato nel singolo di <strong>Simba La Rue Banlieue</strong> insieme a <strong>Philip</strong>.
+    Pubblica poi il singolo <strong>Alcott Zara Bershka</strong> prodotto da Higashi che anticipa il suo primo album <strong>Delinquente</strong>, pubblicato il 27 Agosto 2021, dove, nello specifico, Zaccaria racconta di come <strong>la musica abbia cambiato la sua vita</strong>. L'album arrivò al 7º posto in Italia e ottenne ottimi risultati, con l'aiuto delle collaborazioni di rapper come Il Ghost, Sacky, <strong>Capo Plaza</strong> e <strong>J Lord</strong>, e dai feat internazionali come <strong>ElGrandeToto</strong>, <strong>Moro</strong> e <strong>Morad</strong>.
+    Viene poi ospitato al podcast <strong>Muschio selvaggio</strong>. Prende poi parte ai singoli <strong>Gennaro&Ciro</strong> di Sacky insieme all'algerino <strong>Lacrim</strong> e al singolo <strong>Hood Love</strong> del produttore Dat Boi Dee insieme a <strong>J Lord</strong>.
+    </p>
+
+    <br>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="margin: 10px; text-align: center;">
+            <img src="baby-gang.jpg" alt="delinquente" width="800" height="450">
+            <p style="font-style: italic;">Primo album, Delinquente</p>
+        </div>
+
+
+    <div style="display: flex; justify-content: center;">
+        <h2 id="mentalite">Mentalité</h2>
+    </div>
+    <p>Zaccaria inizia il 2022 pubblicando il singolo <strong>Shoot</strong> insieme a Sacky e <strong>Gazo</strong>, prodotto da Nko. Viene poi ospitato nei singoli di Escomar insieme a Simba La Rue <strong>Fratello Mio</strong>, <strong>Maffia</strong> di <strong>Ashafar</strong> e <strong>Charitè</strong> di <strong>Cancun</strong>.
+    Pubblica poi i singoli <strong>Paranoia</strong> prodotta da <strong>Bobo</strong> e <strong>Come Te</strong> prodotta da Trobi che anticipano il suo secondo EP, <strong>EP 2</strong>. Con 9 tracce presenti si possono trovare solamente i feat di Sacky e <strong>Bené</strong>, mentre oltre a Trobi e Bobo c'è <strong>Higashi</strong> sulla produzione. Nell'album spicca il singolo <strong>Mentalité</strong> che viene certificato <strong>disco di platino</strong> e ottiene un <strong>ottimo successo all'estero</strong>, essendo il 68° singolo più ascoltato in Svizzera nel 2022, e nel 2023 fu il 55º più ascoltato in Germania e il 7° più ascoltato in Svezia.</p>
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div style="margin: 10px; text-align: center;">
+            <img src="ep2.jpg" alt="EP 2" width="500" height="500">
+            <p style="font-style: italic;">Copertina dell'EP 2</p>
+        </div>
+
+        <br>
+
+        <div style="display: flex; justify-content: center;">
+            <h2 id="innocente">Innocente (2023)</h2>
+        </div>
+        <p>Pubblica quattro remix della sua traccia Mentalité insieme ad <strong>Ashe 22</strong>, <strong>Neves17</strong>, <strong>C.Gambino</strong> e <strong>Kalim</strong>. Il 25 maggio 2023 pubblica il secondo album <strong>Innocente</strong>, vantando la collaborazione con artisti italiani del calibro di <strong>Guè</strong>, <strong>Emis Killa</strong>, <strong>Ghali</strong>, <strong>Rondodasosa</strong>, <strong>Baby K</strong>, <strong>Lazza</strong>, e internazionali, quali Lacrim e Elai. L'album è stato prodotto da Bobo, <strong>FT Kings</strong> e <strong>2nd Roof</strong>. Arrivò al 2º posto in Italia e fu il 29º album più ascoltato del 2023. Pubblica poi il remix della canzone <strong>Napoletano</strong> insieme agli SLF come primo estratto della deluxe. Il 6 ottobre 2023 pubblica il singolo <strong>Seconda generazione</strong>, prodotto da Higashi, secondo estratto dall'edizione <strong>deluxe di Innocente</strong>, uscita il 13 ottobre. All'interno della deluxe ci sono i feat di Simba La Rue, J Lord e di rapper internazionali come i francesi <strong>Maes</strong>, <strong>Jul</strong> e, nuovamente, <strong>Morad</strong>.
+        Nel corso dell'anno è presente in molti altri featuring, come <strong>Dov'eri?</strong> di Sacky, <strong>Caracas</strong>, di <strong>Ashe22</strong>, <strong>Carne Halal</strong> di Escomar e Simba La Rue e in <strong>John Gotti</strong> nel caso di Lacrim. Compare anche nell'album <strong>X2VR</strong> di <strong>Sfera Ebbasta</strong> di nuovo insieme a Simba e <strong>Geolier</strong> nella traccia <strong>Calcolatrici</strong>.</p>
+
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="margin: 10px; text-align: center;">
+                <img src="mocro mafia.jpg" alt="mocro mafia" width="800" height="450">
+                <p style="font-style: italic;">In ripresa del videoclip per "Mocro Mafia" con Maes</p>
+            </div>
+
+        <br>
+
+        <div style="display: flex; justify-content: center;">
+            <h2 id="angelo-del-male">L'Angelo del Male</h2>
+        </div>
+        <p>Il 20 gennaio 2024 i carabinieri di Lecco lo hanno denunciato per lesioni aggravate perché sarebbe rimasto coinvolto in una vicenda che ha portato al ferimento di una persona che si definisce sua amica, colpita da munizioni metalliche uscite da una pistola ad aria compressa. I carabinieri della Compagnia di Lecco hanno infine arrestato Mouhib Zaccaria in esecuzione di un'ordinanza di aggravamento della misura cautelare dell'obbligo di dimora con gli arresti domiciliari.
+            Ad inizio 2024 Zaccaria è presente nell'album di Simba La Rue con la canzone <strong>Beccaria San Vittore</strong> e nel singolo <strong>Blocco</strong> di Jul. Pubblica poi i singoli <strong>Hebs</strong> e <strong>Karma</strong> prodotti da Higashi. Compare poi nel singolo <strong>Ma Douce</strong> di <strong>Gims</strong> e <strong>In Italia 2024</strong> di <strong>Fabri Fibra</strong> e <strong>Emma</strong>. Pubblica poi il singolo <strong>Adrenalina</strong> insieme a <strong>Blanco</strong> e <strong>Marracash</strong>, per poi il 26 aprile 2024 pubblicare <strong>L'angelo del male</strong>, il suo terzo album in studio. L'album debutta al <strong>primo posto in Italia</strong> e al quinto il Svizzera e contiene 19 tracce prodotte da Poison Beatz, Higashi e Bobo. All'interno dell'album ci sono solamente collaborazioni italiane; oltre a Marracash e Blanco sono presenti molti artisti già noti al pubblico, come <strong>Paky</strong>, <strong>Jake La Furia</strong>, <strong>Emis Killa</strong>, Geolier, Sfera Ebbasta, <strong>Rocco Hunt</strong>, <strong>Niko Pandetta</strong>, <strong>Guè</strong>, <strong>Gemitaiz</strong>, <strong>MadMan</strong>, Fabri Fibra, Lazza, <strong>Tedua</strong>, Simba La Rue e <strong>Rkomi</strong>.
+            Zaccaria tornerà in galera per uso dei social network vietatigli durante gli arresti domiciliari ma venne ufficialmente assolto il primo luglio 2024.
+            Dopo essere comparso nell'album di Russ Millions, torna a settembre con il singolo Tu me quieres insieme ad Omega, prodotto da Higashi e Roberto Ferrante. Comparve in seguito nel singolo Hangover di Emma.</p>
+
+        <br>
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="margin: 10px; text-align: center;">
+                    <img src="baby-gang-langelo-del-male-nuovo-album.jpg" alt="angelo del male" width="800" height="450">
+                    <p style="font-style: italic;">Angelo del Male</p>
+                </div>
+
+                <br>
+
+                <div style="display: flex; justify-content: center;">
+                    <h2>Singoli come artista principale</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>Singolo</th>
+                            <th>Collaborazioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2018</td>
+                            <td>Street</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Cella 1</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Coco</td>
+                            <td>Il Ghost</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Blitz</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Caramba</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Bimbi Soldato</td>
+                            <td>Sacky</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>Cella 2</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Baby</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Treni</td>
+                            <td>Il Ghost</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>No parla tanto</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Blitz 2</td>
+                            <td>Sofiane</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Banlieue</td>
+                            <td>Simba La Rue, Philip</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Alcott Zara Bershka</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Casablanca</td>
+                            <td>Morad</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>No JoJo</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Ma Chérie</td>
+                            <td>Capo Plaza</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Shoot</td>
+                            <td>Sacky, Gazo</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Paranoia</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Maffia</td>
+                            <td>Ashafar</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Mamacita</td>
+                            <td>Sacky</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Come te</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Mentalità</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Connexion</td>
+                            <td>RAF Camora</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Cella 4</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Napoletano RMX</td>
+                            <td>SLF</
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Seconda generazione</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Libertad</td>
+                            <td>Morad</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Hebs</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Karma</td>
+                            <td>Nessuna</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Adrenalina</td>
+                            <td>Blanco, Marracash</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Tu me quieres</td>
+                            <td>Omega</td>
+                        </tr>
+                    </tbody>
+                </table>   
+                <br>
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <h2>Singoli come artista ospite</h2>
+                </div>
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <table style="border-collapse: collapse; width: 80%; text-align: center;">
+                        <thead>
+                            <tr>
+                                <th>Anno</th>
+                                <th>Singolo</th>
+                                <th>Collaborazioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2020</td>
+                                <td>Baby Gang</td>
+                                <td>167 Gang</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>Shotta 2</td>
+                                <td>Seven 7oo, Vale Pain</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>Sport</td>
+                                <td>Jamil</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>Gennaro & Ciro</td>
+                                <td>Sacky, Lacrim</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>Hood Love</td>
+                                <td>Dat Boi Dee, J Lord</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>Eurovision</td>
+                                <td>Central Cee, Rondodasosa, A2Anti, Morad, Beny Jr, Ashe 22, Freeze Corleone</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>Fratello mio</td>
+                                <td>Escomar, Simba La Rue</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>Charité</td>
+                                <td>Cancun</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Drouba</td>
+                                <td>Benzz, ElGrandeToto, 3robi</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>La muria</td>
+                                <td>Jala Brat, Buba Corelli, Higashi</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Dov'eri?</td>
+                                <td>Sacky</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Caracas</td>
+                                <td>Ashe 22</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Carne halal</td>
+                                <td>Escomar, Simba La Rue</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>John Gotti</td>
+                                <td>Lacrim</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>In Italia 2024</td>
+                                <td>Fabri Fibra, Emma</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>Any Location</td>
+                                <td>Russ Millions</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>Hangover</td>
+                                <td>Emma</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <br>
+                       
+
+        <h2 id="playlist">Ascolta ora la mia Playlist</h2>
+        
+        <p>Se sei interessato ad ascoltare Baby Gang, clicca il bottone in basso per accedere alla mia Playlist Spotify di 6h con tutti i pezzi dell'artista!</p>
+        
+        <a href="https://open.spotify.com/playlist/4u1lgV8x6ENPuoFOCN43Zr?si=1bdea228ca504433" class="btn btn-primary">Ascolta Ora</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+        // Quando la pagina è pronta
+        window.addEventListener('scroll', function () {
+            var nav = document.querySelector('nav');
+            
+            // Se la pagina è scorsa di più di 50px, aggiungi la classe 'scrolled'
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
